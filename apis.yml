@@ -1,8 +1,24 @@
 aid: industrious
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/industrious.png
 name: Industrious
-description: 'Industrious is a company surfaced as a portfolio company of fifth-wall and added to the
-  API Evangelist network as a stub for enrichment. Sector: flex-office. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Industrious is a global flexible workspace provider operating private offices, dedicated
+  and open coworking memberships, and on-demand meeting rooms across hundreds of locations worldwide.
+  Members manage access, bookings, and workspace services through the Industrious member portal and
+  iOS/Android mobile apps. The company was surfaced as a portfolio company of Fifth Wall and added to
+  the API Evangelist network. As of this enrichment pass Industrious publishes a consumer/member web
+  and mobile experience but no public developer API, developer portal, SDKs, or API documentation;
+  this profile therefore captures company identity and domain-security posture only.'
 url: https://raw.githubusercontent.com/api-evangelist/industrious/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Flex Office
+- Coworking
+- Workspace
+- Commercial Real Estate
+- Office Space
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +45,20 @@ maintainers:
 common:
 - type: Website
   url: https://www.industriousoffice.com/
+- type: Blog
+  url: https://www.industriousoffice.com/blog
+- type: Support
+  url: https://www.industriousoffice.com/contact-us
+- type: Login
+  url: https://portal.industriousoffice.com
+- type: TermsOfService
+  url: https://www.industriousoffice.com/site-portal-terms
+- type: PrivacyPolicy
+  url: https://www.industriousoffice.com/privacy-policy
+- type: DomainSecurity
+  url: security/industrious-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
